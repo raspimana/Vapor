@@ -8,7 +8,7 @@ var vaporwindow = `new Nightmare({
 })`
 
 async function injectnightmare() {
-var NightmareWindows = await fetch("https://cdn.jsdelivr.net/gh/FogNetwork/Nightmare-Windows/windows.min.js")
+var NightmareWindows = await fetch("https://cdn.jsdelivr.net/gh/FogNetwork/Nightmare-Windows/windows.js")
 var NightmareCode = await NightmareWindows.text()
 NightmareCode = NightmareCode.replaceAll("<br>", ";")
 var cdn1 = document.createElement("script")
